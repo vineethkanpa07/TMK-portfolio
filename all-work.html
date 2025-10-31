@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Work — Vineeth (TMK) Kanpa</title>
+  <meta name="description" content="All work by Vineeth (TMK) Kanpa — complete archive of edits, videos, and creative projects." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header matches index.html, with All Work tab included -->
+  <header>
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-name"> Vineeth Kanpa</div>
+      </div>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="all-work.html"><strong>All Work</strong></a>
+        <a href="index.html#featuredwork">Featured</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+    <div id="mobileMenu" class="mobile-drawer container" role="dialog" aria-label="Mobile Navigation">
+      <a href="all-work.html"><strong>All Work</strong></a>
+      <a href="index.html#featuredwork">Featured</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="kicker">Complete Archive</span>
+          <h1>All Work</h1>
+          <p class="sub">Every edit, story, and experiment — long-form, shorts, and showcases.</p>
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="index.html#featuredwork">Back to Featured</a>
+          </div>
+        </div>
+        <div class="hero-media card">
+          <!-- Keep or swap this highlight -->
+          <iframe class="embed" src="https://www.youtube.com/embed/Lh-TpFsKKWA?start=610&rel=0" title="Archive Highlight" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive Grid (same styling as Featured) -->
+    <section class="section" id="allwork">
+      <div class="container">
+        <h2>Archive</h2>
+        <p class="lead">Browse the full collection. Duplicate cards to add more projects.</p>
+
+        <div class="grid workgrid">
+          <!-- Copy your Featured cards here and add more as needed -->
+          <article class="card">
+            <div class="card-media">
+              <iframe class="embed" src="https://www.youtube.com/embed/Lh-TpFsKKWA?start=610&rel=0" title="YouTube Feature — High-energy Story" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>YouTube Feature — High-energy Story</h3>
+              <p>Fast edits, creator-forward pacing, and humor with clean narrative beats.</p>
+              <div class="tags"><span class="tag">Edit</span><span class="tag">Creator</span><span class="tag">Narrative</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <iframe class="embed" src="https://www.youtube.com/embed/NC8FCUSXaRI?start=768&rel=0" title="Longform — Personality & Pace" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Longform — Personality & Pace</h3>
+              <p>Maintaining playful tone over long runtime while surfacing story moments.</p>
+              <div class="tags"><span class="tag">YouTube</span><span class="tag">Editing</span><span class="tag">Story</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <iframe class="embed" src="https://www.youtube.com/embed/GRTL60f1fAA?start=1224&rel=0" title="Shorts Rhythm — Snappy Cuts" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Shorts Rhythm — Snappy Cuts</h3>
+              <p>Short-form energy and scroll-stopping intros, optimized for social viewing.</p>
+              <div class="tags"><span class="tag">Short-form</span><span class="tag">Pacing</span><span class="tag">Social</span></div>
+            </div>
+          </article>
+
+          <!-- Template card: duplicate this block to add more items -->
+          <article class="card">
+            <div class="card-media">
+              <iframe class="embed" src="https://www.youtube.com/embed/VIDEO_ID?start=0&rel=0" title="Project Title" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Project Title</h3>
+              <p>One-liner about what you did (edit, pacing, color, graphics, etc.).</p>
+              <div class="tags"><span class="tag">Tag</span><span class="tag">Another</span></div>
+            </div>
+          </article>
+          <!-- End template -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Vineeth (TMK) Kanpa • TMK
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
