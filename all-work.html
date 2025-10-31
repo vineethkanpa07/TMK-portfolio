@@ -64,14 +64,21 @@
         <div class="grid workgrid">
           <!-- Copy your Featured cards here and add more as needed -->
           <article class="card">
-            <div class="card-media" style="display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:#111;border-radius:16px;">
-              <a class="btn btn-primary"
-                 href="https://www.instagram.com/p/DLYAYNMpPYW/"
-                 target="_blank" rel="noopener"
-                 style="padding:12px 16px;border-radius:10px;text-decoration:none;">
-                View on Instagram
+            <div class="card-media" style="position:relative;border-radius:16px;overflow:hidden;">
+              <a href="https://www.instagram.com/p/DLYAYNMpPYW/" target="_blank" rel="noopener"
+                 style="display:block;position:relative;">
+                <img src="./assets/ig-DLYAYNMpPYW.jpg"
+                     alt="Instagram edit by TMK"
+                     style="display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;">
+                <!-- play icon overlay -->
+                <svg viewBox="0 0 100 100" aria-hidden="true"
+                     style="position:absolute;inset:0;margin:auto;width:56px;height:56px;opacity:.9;filter:drop-shadow(0 6px 12px rgba(0,0,0,.35));">
+                  <circle cx="50" cy="50" r="48" fill="white" opacity=".85"/>
+                  <polygon points="42,32 42,68 70,50" fill="#111827"/>
+                </svg>
               </a>
             </div>
+
 
             <div class="card-body">
               <h3>Instagram Edit — Fast-Paced Story</h3>
