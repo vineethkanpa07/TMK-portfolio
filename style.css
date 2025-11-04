@@ -12,6 +12,11 @@
   --font-display: "Sora", var(--font-sans);
 }
 
+h2, .btn-primary, .tag {
+  background: var(--accent);
+  color: white;
+}
+
 /* === BASE STYLES === */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
