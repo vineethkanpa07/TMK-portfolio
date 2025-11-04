@@ -12,7 +12,7 @@
   --font-display: "Sora", var(--font-sans);
 }
 
-h2, .btn-primary, .tag {
+.btn-primary, .tag {
   background: var(--accent);
   color: white;
 }
