@@ -260,3 +260,72 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .btn, .btn-primary { transition: none; }
 }
+
+/* === INTERACTIVITY & MOTION UPGRADES === */
+
+/* Smooth fade-in for all sections */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Make cards “bubbly” on hover */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 45px rgba(99, 102, 241, 0.15);
+  background: #f5f6ff;
+}
+
+/* Button bounce animation */
+.btn-primary {
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.25);
+}
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Tag “bubble” effect */
+.tag {
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.tag:hover {
+  background: #6366f1;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Section headers: smooth gradient text instead of background */
+.section h2 {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.section h2:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar: add subtle backdrop animation */
+header {
+  backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+header:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+
