@@ -140,14 +140,36 @@ h1 {
 /* SECTION HEADERS */
 .section { padding: 70px 0; }
 .section h2 {
+  position: relative;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(22px, 3vw, 30px);
   color: var(--accent-2);
-  border-left: 5px solid var(--accent);
-  padding-left: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  display: inline-block;
+  z-index: 1;
 }
+
+/* soft circular highlight behind titles */
+.section h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at center, rgba(99, 102, 241, 0.18), transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.section h2:hover::before {
+  opacity: 1;
+}
+
 .section p.lead { color: var(--muted); margin-bottom: 28px; }
 
 /* CARDS */
