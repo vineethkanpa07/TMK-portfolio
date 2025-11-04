@@ -418,3 +418,35 @@ header:hover {
   transform: translate(-50%, -50%) scale(1.05);
   opacity: 1;
 }
+
+/* === HERO BUTTON FIX === */
+.hero .btn {
+  position: relative;
+  z-index: 10; /* ensures it's clickable */
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.hero .btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+}
+.hero .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+  background: #4f46e5;
+}
+
+.hero .btn-ghost {
+  background: transparent;
+  color: var(--accent-2);
+  border: 2px solid var(--accent);
+}
+.hero .btn-ghost:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
+}
