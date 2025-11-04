@@ -450,3 +450,33 @@ header:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
 }
+
+/* === HERO BUTTON COLOR VARIANTS === */
+
+/* "Watch My Work" — dark bordered button */
+.hero .btn-primary {
+  background: #fff;
+  color: var(--accent-2);
+  border: 2px solid #000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.hero .btn-primary:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+}
+
+/* "Get In Touch" — light bordered button */
+.hero .btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+.hero .btn-ghost:hover {
+  background: #fff;
+  color: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+}
